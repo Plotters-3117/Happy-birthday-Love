@@ -3,9 +3,9 @@
   Replace the sample text and photo paths below whenever you're ready.
 */
 const SITE_CONTENT = {
-  birthdayHeading: "happy 21st birthday ♡",
+  birthdayHeading: "happy 21st birthdayyyyy luannnn ♡",
   birthdayParagraphs: [
-    "today is a celebration of you — the kindest, most beautiful, incredibly strong, and the most amazing person i know.",
+    "today is a celebration of you — the most beautiful, incredibly strong, and the most amazing person i know.",
     "it's kind of crazy that you're already 21, yesterday only you were 19(insert teary emoji). You intriguere me so much with your way of life and the way you care for me and the way you treat your people, everything is just better with you in it. I know we've had our ups and downs in life and i know we've come a long way but youa re still thew one i've always admired romantically and ill continue to do so. I am so proud of you and I love you so much my sweetheart.",
     "i hope this year brings you so much happiness, peace, joy, new experiences, and all the opportunities you've been wishing for physically, emotionally and mentally(maybe even romantically). i hope you feel proud of how far you've come and excited for all that's still ahead of you because i know how hard you work and how dedicated you are to building your life love.",
     "most of all, i hope you always remember how special you are, not just today, but every single day, 24 x 7, 365. Never stop radiating this glow you show me everyday maybe in college or our date or anywhere else",

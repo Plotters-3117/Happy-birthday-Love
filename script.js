@@ -6,7 +6,7 @@ const SITE_CONTENT = {
   birthdayHeading: "happy 21st birthday ♡",
   birthdayParagraphs: [
     "today is a celebration of you — the kindest, most beautiful, incredibly strong, and the most amazing person i know.",
-    "it's kind of crazy that you're already 21, yesterday only you were 19(insert teary emoji). You intriguere me so much with your way of life and the way you care for me and the way you treat your people, everything is just better with you in it. I am so proud of you and I love you so much.",
+    "it's kind of crazy that you're already 21, yesterday only you were 19(insert teary emoji). You intriguere me so much with your way of life and the way you care for me and the way you treat your people, everything is just better with you in it. I know we've had our ups and downs in life and i know we've come a long way but youa re still thew one i've always admired romantically and ill continue to do so. I am so proud of you and I love you so much my sweetheart.",
     "i hope this year brings you so much happiness, peace, joy, new experiences, and all the opportunities you've been wishing for physically, emotionally and mentally(maybe even romantically). i hope you feel proud of how far you've come and excited for all that's still ahead of you because i know how hard you work and how dedicated you are to building your life love.",
     "most of all, i hope you always remember how special you are, not just today, but every single day, 24 x 7, 365. Never stop radiating this glow you show me everyday maybe in college or our date or anywhere else",
     "happy 21st birthday, my love. you deserve all the good things in the world and so much more and just know ill always be here rooting for you and clapping the hardest. ♡"
@@ -16,7 +16,7 @@ const SITE_CONTENT = {
   letterTitle: "A little letter for you",
   letterParagraphs: [
     "I wanted to leave you something you could come back to whenever you need a reminder of how loved and appreciated you are.",
-    "I hope you never forget how much goodness you bring into the world just by being yourself. Keep dreaming, keep growing, and keep being wonderfully you.",
+    "I hope you never forget how much you mean to me and how much joy you bring into my life. Our fun little dates and outigns where we laugh on random thigns and the way we do those calls will never tire me because this has been my dream. I love you sweetheart and i wish nothign but the very best for you forever. Keep dreaming, keep growing, and keep being wonderfully you.",
     "I am always wishing the very best for you. Happy birthday, beautiful. ♡"
   ],
 
@@ -25,7 +25,8 @@ const SITE_CONTENT = {
     "May this new year of your life bring you peace in your heart, clarity in your choices, and courage for every new beginning.",
     "May the things you quietly wish for find their way to you. May you be protected from what is not meant for you and guided towards everything that helps you grow.",
     "May you always find reasons to smile, strength when days feel difficult, and people who remind you how precious you are.",
-    "May your 21st year be filled with love, health, beautiful opportunities, and countless little blessings. ♡"
+    "May your 21st year be filled with love, health, beautiful opportunities, and countless little blessings. ♡",
+    "God bless you, my love, and a very very very happy birthday. I love you so much."
   ],
 
   // Put your photos inside assets/photos/ and update these paths.

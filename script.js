@@ -114,7 +114,7 @@ function openModal(kind, trigger) {
     modalContent.appendChild(gallery);
     const hint = document.createElement("p");
     hint.className = "photo-hint";
-    hint.textContent = "Replace the sample photo paths in script.js with your own pictures.";
+    hint.textContent = "Click a photo to enlarge it.";
     modalContent.appendChild(hint);
   }
   modal.classList.add("open");

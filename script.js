@@ -234,3 +234,16 @@ function escapeHTML(value) {
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
   })[character]);
 }
+
+const bgMusic = document.getElementById("bgMusic");
+
+bgMusic.volume = 0.35;
+
+// Start music after the visitor's first interaction.
+document.addEventListener("click", function startMusic() {
+    bgMusic.play().catch(error => {
+        console.log("Music playback requires interaction.");
+    });
+
+    document.removeEventListener("click", startMusic);
+}, { once: true });

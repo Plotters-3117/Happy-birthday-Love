@@ -122,7 +122,33 @@ h1, h2 { font-weight: 400; }
 .letter-date { margin: 0 0 30px; color: #9f263c; font: clamp(2.4rem,5vw,3.6rem)/1.1 var(--script); }
 .letter-body { white-space: pre-line; color: #593b37; font: 19px/1.75 var(--serif); }
 .letter-body p { margin: 0 0 21px; }
-.letter-signoff { margin: 30px 0 0; color: #9f263c; font: 28px var(--script); }
+.letter-signoff {
+  margin: 30px 0 0;
+  color: #9f263c;
+  font: 28px var(--script);
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.letter-signoff.visible {
+  opacity: 1;
+}
+
+/* Blinking writing cursor */
+.letter-body.typing p:last-child::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  margin-left: 3px;
+  background: #9f263c;
+  vertical-align: -2px;
+  animation: writing-cursor 0.8s steps(2) infinite;
+}
+
+@keyframes writing-cursor {
+  50% { opacity: 0; }
+}
 .desk-decor { position: absolute; color: rgba(220,166,132,.4); pointer-events: none; }
 .desk-flower { left: 4%; top: 15%; font-size: 115px; transform: rotate(-15deg); }
 .desk-pen { position: absolute; right: 9%; top: 52%; width: 190px; height: 9px; border-radius: 8px; background: linear-gradient(90deg,#32101a,#9d4c4e,#260811); transform: rotate(58deg); opacity: .75; box-shadow: 0 8px 15px rgba(0,0,0,.3); }

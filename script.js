@@ -38,11 +38,83 @@ const SITE_CONTENT = {
   ]
 };
 
-// Render the editable birthday letter.
-document.getElementById("birthday-heading").textContent = SITE_CONTENT.birthdayHeading;
-document.getElementById("birthday-message").innerHTML = SITE_CONTENT.birthdayParagraphs
-  .map(paragraph => `<p>${escapeHTML(paragraph)}</p>`).join("");
-document.getElementById("birthday-signoff").textContent = SITE_CONTENT.birthdaySignoff;
+// Render the birthday letter with a typewriter effect.
+const birthdayHeading = document.getElementById("birthday-heading");
+const birthdayMessage = document.getElementById("birthday-message");
+const birthdaySignoff = document.getElementById("birthday-signoff");
+
+birthdayHeading.textContent = SITE_CONTENT.birthdayHeading;
+birthdaySignoff.textContent = SITE_CONTENT.birthdaySignoff;
+
+let letterStarted = false;
+
+function typeBirthdayLetter() {
+  if (letterStarted) return;
+  letterStarted = true;
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    birthdayMessage.innerHTML = SITE_CONTENT.birthdayParagraphs
+      .map(p => `<p>${escapeHTML(p)}</p>`).join("");
+    birthdaySignoff.classList.add("visible");
+    return;
+  }
+
+  birthdayMessage.innerHTML = "";
+  birthdayMessage.classList.add("typing");
+
+  let paragraphIndex = 0;
+  let characterIndex = 0;
+  let currentParagraph = null;
+
+  function typeNext() {
+    if (paragraphIndex >= SITE_CONTENT.birthdayParagraphs.length) {
+      birthdayMessage.classList.remove("typing");
+      birthdaySignoff.classList.add("visible");
+      return;
+    }
+
+    const characters = Array.from(
+      SITE_CONTENT.birthdayParagraphs[paragraphIndex]
+    );
+
+    if (!currentParagraph) {
+      currentParagraph = document.createElement("p");
+      birthdayMessage.appendChild(currentParagraph);
+    }
+
+    if (characterIndex < characters.length) {
+      const character = characters[characterIndex];
+      currentParagraph.textContent += character;
+      characterIndex++;
+
+      let delay = 27;
+
+      if (/[.!?]/.test(character)) delay = 180;
+      else if (/[,;:]/.test(character)) delay = 100;
+      else if (character === " ") delay = 10;
+
+      setTimeout(typeNext, delay);
+    } else {
+      paragraphIndex++;
+      characterIndex = 0;
+      currentParagraph = null;
+
+      setTimeout(typeNext, 450);
+    }
+  }
+
+  typeNext();
+}
+
+// Start writing when the birthday letter enters the screen.
+const letterObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    typeBirthdayLetter();
+    letterObserver.disconnect();
+  }
+}, { threshold: 0.2 });
+
+letterObserver.observe(document.getElementById("birthday-letter"));
 
 // Lightweight floating particles: created once, animated by CSS.
 const particleHost = document.getElementById("particles");

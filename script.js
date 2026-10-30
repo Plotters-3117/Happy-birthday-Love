@@ -31,10 +31,10 @@ const SITE_CONTENT = {
 
   // Put your photos inside assets/photos/ and update these paths.
   photos: [
-    { src: "assets/photos/photo-1.jpeg", caption: "Our favourite Photo" },
-    { src: "assets/photos/photo-2.jpeg", caption: "My beautiful star" },
-    { src: "assets/photos/photo-3.jpeg", caption: "Dayum" },
-    { src: "assets/photos/photo-4.jpeg", caption: "Hot Model" }
+    { src: "assets/photos/imag1.jpeg", caption: "Our favourite Photo" },
+    { src: "assets/photos/imag2.jpeg", caption: "My beautiful star" },
+    { src: "assets/photos/imag3.jpeg", caption: "Dayum" },
+    { src: "assets/photos/imag4.jpeg", caption: "Hot Model" }
   ]
 };
 

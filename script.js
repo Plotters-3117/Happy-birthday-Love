@@ -6,12 +6,12 @@ const SITE_CONTENT = {
   birthdayHeading: "happy 21st birthday ♡",
   birthdayParagraphs: [
     "today is a celebration of you — the kindest, most beautiful, incredibly strong, and the most amazing person i know.",
-    "it's kind of crazy that you're already 21, stepping into a new chapter, with so many dreams, ideas and a whole future ahead of you. you inspire me so much with the way you see the world, the way you care, and the little things you do that make everything brighter.",
-    "i hope this year brings you so much happiness, peace, new experiences, and all the opportunities you've been wishing for. i hope you feel proud of how far you've come and excited for all that's still ahead.",
-    "most of all, i hope you always remember how special you are, not just today, but every single day.",
-    "happy 21st birthday, my love. you deserve all the good things in the world and so much more. ♡"
+    "it's kind of crazy that you're already 21, yesterday only you were 19(insert teary emoji). You intriguere me so much with your way of life and the way you care for me and the way you treat your people, everything is just better with you in it. I am so proud of you and I love you so much.",
+    "i hope this year brings you so much happiness, peace, joy, new experiences, and all the opportunities you've been wishing for physically, emotionally and mentally(maybe even romantically). i hope you feel proud of how far you've come and excited for all that's still ahead of you because i know how hard you work and how dedicated you are to building your life love.",
+    "most of all, i hope you always remember how special you are, not just today, but every single day, 24 x 7, 365. Never stop radiating this glow you show me everyday maybe in college or our date or anywhere else",
+    "happy 21st birthday, my love. you deserve all the good things in the world and so much more and just know ill always be here rooting for you and clapping the hardest. ♡"
   ],
-  birthdaySignoff: "with all my love, ♡",
+  birthdaySignoff: "with all my love my lovely luan, ♡",
 
   letterTitle: "A little letter for you",
   letterParagraphs: [

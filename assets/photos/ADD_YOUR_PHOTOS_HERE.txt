@@ -1,0 +1,1 @@
+Add your own images to this folder, then update the photo paths in script.js.

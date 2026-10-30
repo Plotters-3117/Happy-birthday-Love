@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#390b18">
+  <meta name="description" content="A little birthday world, made just for you.">
+  <title>A Little World Just For You ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient-glow glow-one"></div>
+    <div class="ambient-glow glow-two"></div>
+    <div id="particles"></div>
+  </div>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-side-note" aria-hidden="true">a little something, made with love</div>
+      <div class="moon" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">A birthday keepsake</p>
+        <h1>A Little World<br><span>Just For You</span></h1>
+        <div class="tiny-heart">♡</div>
+        <p class="hero-copy">letters, memories, thoughts and<br class="desktop-break"> a whole lot of love — all in one place.</p>
+        <a class="scroll-cue" href="#open-when" aria-label="Scroll to the keepsakes">
+          <span>take a little look</span><i></i>
+        </a>
+      </div>
+      <div class="hero-decor decor-left" aria-hidden="true">
+        <div class="book-stack"><span></span><span></span><span></span></div>
+        <div class="vase"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="little-lamp"></div>
+      </div>
+      <div class="hero-decor decor-right" aria-hidden="true">
+        <span class="soft-flower flower-a">✿</span>
+        <span class="soft-flower flower-b">✿</span>
+      </div>
+    </section>
+
+    <section class="open-section section-shell" id="open-when">
+      <div class="section-heading reveal">
+        <p class="eyebrow">little things to open</p>
+        <h2>Open When<span>...</span></h2>
+        <div class="tiny-heart">♡</div>
+        <p>Take a moment, click on what you'd like to open.<br>Each one holds a little piece of me for you.</p>
+      </div>
+
+      <div class="keepsake-grid">
+        <button class="keepsake-card reveal" data-open="letter" type="button" aria-label="Open for Letter 1">
+          <span class="envelope envelope-cream">
+            <span class="envelope-flap"></span>
+            <span class="envelope-heart">♡</span>
+            <span class="envelope-sprig">✿</span>
+          </span>
+          <span class="card-label"><span class="label-icon">✉</span><span>Open for<br><strong>Letter 1</strong></span></span>
+        </button>
+
+        <button class="keepsake-card reveal" data-open="photos" type="button" aria-label="Open for Some Pics">
+          <span class="polaroid-stack">
+            <span class="mini-photo photo-back"></span>
+            <span class="mini-photo photo-middle"></span>
+            <span class="mini-photo photo-front"><i>♡</i></span>
+          </span>
+          <span class="card-label"><span class="label-icon">▧</span><span>Open for<br><strong>Some Pics</strong></span></span>
+        </button>
+
+        <button class="keepsake-card reveal" data-open="prayer" type="button" aria-label="Open for a Prayer">
+          <span class="prayer-envelope">
+            <span class="prayer-ribbon"></span>
+            <span class="prayer-word">Prayer</span>
+            <span class="prayer-seal">♡</span>
+          </span>
+          <span class="card-label"><span class="label-icon">✧</span><span>Open for<br><strong>a Prayer</strong></span></span>
+        </button>
+      </div>
+      <div class="section-divider" aria-hidden="true"><span>♡</span></div>
+    </section>
+
+    <section class="birthday-section section-shell" id="birthday-letter">
+      <div class="desk-decor desk-flower" aria-hidden="true">✿</div>
+      <div class="letter-wrap reveal">
+        <div class="tape"></div>
+        <div class="letter-stamp">♡</div>
+        <article class="birthday-paper">
+          <p class="letter-date" id="birthday-heading">happy 21st birthday ♡</p>
+          <div class="letter-body" id="birthday-message"></div>
+          <p class="letter-signoff" id="birthday-signoff">with all my love, ♡</p>
+        </article>
+      </div>
+      <div class="desk-pen" aria-hidden="true"></div>
+      <p class="closing-note reveal">I hope today feels as lovely as you are. <span>♡</span></p>
+    </section>
+
+    <footer class="footer">
+      <span>made with love, just for you</span>
+      <span class="footer-heart">♡</span>
+    </footer>
+  </main>
+
+  <div class="modal-backdrop" id="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close">×</button>
+      <div class="modal-paper">
+        <p class="eyebrow" id="modal-eyebrow">a little note</p>
+        <h2 id="modal-title"></h2>
+        <div id="modal-content" class="modal-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
